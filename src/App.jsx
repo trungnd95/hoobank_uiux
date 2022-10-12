@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from "./components";
+import { CTA, Navbar } from "./components";
 import { Billing, Business, CardDeal, Hero, Stats, Testimonials } from "./sections";
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Billing />
           <CardDeal />
           <Testimonials />
+          <CTA />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from "./components";
-import { Business, Hero, Stats } from "./sections";
+import { Billing, Business, Hero, Stats } from "./sections";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <div className="box-w">
           <Stats />
           <Business />
+          <Billing />
         </div>
       </div>
     </div>

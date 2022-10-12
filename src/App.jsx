@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from "./components";
-import { Hero, Stats } from "./sections";
+import { Business, Hero, Stats } from "./sections";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <div className="bg-primary flex-start padding-x">
         <div className="box-w">
           <Stats />
+          <Business />
         </div>
       </div>
     </div>

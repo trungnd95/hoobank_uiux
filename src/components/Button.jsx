@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Button() {
+function Button({customStyle}) {
   return (
-    <div>Button</div>
+    <button type="button" class={`px-6 py-4 bg-blue-gradient font-poppins font-medium text-primary outline-none text-[18px] ${customStyle}`}>
+      Get Started
+    </button>
   )
 }
 

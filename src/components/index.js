@@ -5,4 +5,5 @@ export { default as CTA } from "./CTA";
 export { default as FeedbackCard } from "./FeedbackCard";
 export { default as GetStarted } from "./GetStarted";
 export { default as Navbar } from "./Navbar";
+export { default as FeatureCard } from "./FeatureCard";
 

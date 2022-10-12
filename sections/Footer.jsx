@@ -1,16 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
-import { logo } from '../assets'
 import { footerLinks, socialMedia } from '../constants'
+import { logo } from '../public/assets'
 
 function Footer() {
   return (
     <section className="flex-center flex-col padding-y">
       <div className="flex-start md:flex-row flex-col mb-8 w-full">
-        <div className="flex-[1] flex flex-col justify-start mr-10">
-          <img
+        <div className="flex-1 flex flex-col justify-start mr-10">
+          <Image
             src={logo}
             alt="hoobank"
-            className="w-[266px] h-[72.14px] object-contain"
+            className="w-[266px] h-[72.14px]"
+            objectPosition="left"
+            objectFit="contain"
           />
           <p className="paragraph mt-4 max-w-[312px]">
             A new way to make the payments easy, reliable and secure.
@@ -42,13 +45,13 @@ function Footer() {
           Copyright Ⓒ 2022 HooBank. All Rights Reserved.
         </p>
 
-        <div className="flex flex-row md:mt-0 mt-6">
+        <div className="flex flex-row md:mt-0 mt-6 gap-6">
           {socialMedia.map((social, index) => (
-            <img
+            <Image
               key={social.id}
               src={social.icon}
               alt={social.id}
-              className="w-[21px] h-[21px] object-contain cursor-pointer mr-6 last:mr-0"
+              className="w-[21px] h-[21px] flex-1 cursor-pointer"
               onClick={() => window.open(social.link)}
             />
           ))}

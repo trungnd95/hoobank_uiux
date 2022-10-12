@@ -1,4 +1,4 @@
-import { airbnb, binance, coinbase, dropbox, facebook, instagram, linkedin, people01, people02, people03, send, shield, star, twitter } from "../assets";
+import { airbnb, binance, coinbase, dropbox, facebook, instagram, linkedin, people01, people02, people03, send, shield, star, twitter } from "../public/assets";
 
 export const navLinks = [
   {

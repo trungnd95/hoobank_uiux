@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-import { arrowUp } from '../assets'
+import { arrowUp } from '../public/assets'
 
 function GetStarted() {
   return (
@@ -9,7 +10,7 @@ function GetStarted() {
                 <p className="font-poppins font-medium text-[18px] leading-[23px]">
                     <span className="text-gradient">Get</span>
                 </p>
-                <img src={arrowUp} alt="arrow" className="w-[23px] h-[23px] object-contain ml-2" />
+                <Image src={arrowUp} alt="arrow" className="w-[23px] h-[23px] object-contain ml-2" />
             </div>
             <p className="font-poppins font-medium text-[18px] leading-[23px]">
                 <span className="text-gradient">Started</span>

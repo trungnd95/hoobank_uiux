@@ -1,6 +1,7 @@
+import Image from 'next/image'
 import React from 'react'
-import { card } from '../assets'
 import { Button } from '../components'
+import { card } from '../public/assets'
 
 function CardDeal() {
   return (
@@ -13,7 +14,7 @@ function CardDeal() {
         <Button customStyle="mt-10" />
       </div>
       <div className="flex flex-center flex-1 ml-0 md:ml-10 mt-10 md:mt-0 relative">
-        <img src={card} alt="card deal" className="w-[100%] h-[100%] object-contain" />
+        <Image src={card} alt="card deal" className="w-[100%] h-[100%] object-contain" objectFit="contain" />
       </div>
     </section>
   )

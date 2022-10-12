@@ -2,7 +2,7 @@ import React from 'react'
 
 function FeatureCard({icon, title, content, index}) {
   return (
-     <div className="flex flex-row p-6 rounded-[20px] mb-0 last-child:mb-6 feature-card">
+     <div className="flex flex-row p-6 rounded-[20px] mb-0 last:mb-6 feature-card">
         <div className="w-[64px] h-[64px] rounded-full flex-center bg-dimBlue">
           <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
         </div>

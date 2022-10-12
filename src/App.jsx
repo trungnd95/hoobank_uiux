@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from "./components";
-import { Billing, Business, Hero, Stats } from "./sections";
+import { Billing, Business, CardDeal, Hero, Stats } from "./sections";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Stats />
           <Business />
           <Billing />
+          <CardDeal />
         </div>
       </div>
     </div>
